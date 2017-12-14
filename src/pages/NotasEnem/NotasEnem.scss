@@ -1,0 +1,73 @@
+page-NotasEnem {
+
+height:auto;
+padding: 40px 0;
+color:white;
+font-family: ProximaNova-Bold;
+font-size:20px;
+background-image: linear-gradient(to right, #18ACC4, #05869B 100%);
+
+.content-wrapper{
+  height:90vh;
+  width:98%;
+  background-color:transparent;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+h1{
+  color: white;
+  margin: 16px 0px !important;
+
+}
+
+.item-content {
+  float: left;
+  width: 40%;
+  height: 80px;
+  margin: 15px;
+  padding: 5px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  //align-content:center;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.item-box{
+    border: none;
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+    font-size: 24px;
+    color: white;
+    background-color: transparent !important;
+    align-content: flex-start;
+    margin: auto;
+
+}
+
+.label-input{
+  width: 100%;
+  padding: 5px 0px 10px 0px;
+  margin: auto;
+}
+
+.button-md-secondary{
+  //margin-top: 1em;
+  width: 100%;
+}
+
+.bar-button-md{
+  text-transform: none;
+}
+
+.footer{
+  padding: 15px;
+}
+
+
+}

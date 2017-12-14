@@ -1,0 +1,96 @@
+page-EscolaPublica {
+
+height:auto;
+padding: 40px 0;
+color:white;
+font-family: ProximaNova-Bold;
+font-size:20px;
+text-align:center;
+background-image: linear-gradient(to right, #18ACC4, #05869B 100%);
+
+.content-wrapper{
+  width:98%;
+  background-color:transparent;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+h2{
+  font-size: 20px;
+  font-family: ProximaNova-Semibold;
+  letter-spacing: -0.48px;
+}
+
+h3{
+  font-family: ProximaNova-Bold;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: -0.55px;
+}
+
+
+.radio-button{
+  margin: 30px;
+  padding: 0;
+}
+
+.radio-icon{
+  visibility: hidden;
+width: 0;
+height: 0;
+}
+
+$radioButtonRadius: 5px;
+
+.radio-button input:checked + label{
+  border: 1px solid white;
+  //border-radius: 5px;
+  padding: 20px 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: #3F93A9;
+  background-color: white !important;
+  margin: -8px;
+  &:first-of-type {
+    border-top-left-radius: $radioButtonRadius;
+    border-bottom-left-radius: $radioButtonRadius;
+  }
+
+  &:last-of-type {
+    border-top-right-radius: $radioButtonRadius;
+    border-bottom-right-radius: $radioButtonRadius;
+  }
+
+}
+
+label {
+  //border: none;
+  border: 1px solid white;
+  //border-radius: 5px;
+  padding: 20px 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    color: white; //#6CB8CB;
+    background-color: transparent !important;
+    margin: -8px;
+    &:first-of-type {
+      border-top-left-radius: $radioButtonRadius;
+      border-bottom-left-radius: $radioButtonRadius;
+    }
+
+    &:last-of-type {
+      border-top-right-radius: $radioButtonRadius;
+      border-bottom-right-radius: $radioButtonRadius;
+    }
+
+
+}
+
+
+
+
+
+}

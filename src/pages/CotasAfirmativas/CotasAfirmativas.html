@@ -1,0 +1,51 @@
+  <ion-header>
+    <ion-navbar>
+      <ion-title>
+        Cotas 3/3
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+    <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+</head>
+
+
+<div>
+  <h1>5 - Você gostaria de concorrer a alguma das cotas abaixo?</h1>
+</div>
+
+<div>
+  <ion-content padding="true" style="height:90vh; background-color:transparent">
+    <!-- <div> -->
+    <!-- <ion-row class="item-content"> -->
+      <label class="item item-icon-left item-radio">
+        <input type="radio" class="item-radio-default item-content" name="group">
+          <i class="radio-icon ion-checkmark"></i>
+          <div>
+          Não, apenas a cota de escola pública
+          </div>
+      </label>
+    <!-- </ion-row> -->
+      <label class="item item-icon-left item-radio" style="border: none; margin-top: 10px; width: 100%; background-color: transparent">
+        <input type="radio" class="item-radio-default" name="group">
+          <div class="row item-content">
+          Cota para autodeclarados pretos, pardos ou indígenas
+          </div>
+        <i class="radio-icon ion-checkmark"></i>
+      </label>
+      <label class="item item-icon-left item-radio" style="border: none; margin-top: 10px; width: 100%; height: auto; background-color: transparent" >
+        <input type="radio" class="item-radio-default" name="group">
+          <div class="row item-content">
+          Cota para deficientes
+          </div>
+        <i class="radio-icon ion-checkmark"></i>
+      </label>
+    <!-- </div> -->
+  </ion-content>
+  <ion-footer>
+    <button ion-button large color="secondary" (click)="startApp()" >Continuar</button>
+  </ion-footer>
+</div>

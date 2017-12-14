@@ -1,0 +1,66 @@
+  <ion-header>
+    <ion-navbar>
+      <ion-title>
+        Notas de Corte
+      </ion-title>
+      <ion-buttons end>
+        <button style="float: right" ion-button small outline color="light" (click)="showFilters()">Filtros</button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+
+
+    <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+</head>
+
+
+<div>
+  <div style="margin:15px;">
+    <button ion-button large color="secondary" (click)="startApp()" >Ver em quais cursos consigo entrar</button>
+  </div>
+  <ion-row style="margin: 0 15px">
+    <ion-col>
+      <ion-item style="color: black !important">
+        <ion-label>Ordenar por:</ion-label>
+        <ion-select [(ngModel)]="ordering">
+          <ion-option value="relevance">Relevância</ion-option>
+          <ion-option value="highest">Maior nota</ion-option>
+          <ion-option value="lowest">Menor nota</ion-option>
+          <ion-option value="nearest">Distância</ion-option>
+        </ion-select>
+      </ion-item>
+    </ion-col>
+
+  </ion-row>
+
+</div>
+
+<div>
+  <ion-content padding="true" style="height:70vh; background-color:transparent">
+    <ion-card style="margin: 16px 0px;" *ngFor="let course of courses">
+      <ion-row>
+        <ion-col col-3>
+          <img class="university-image" src="assets/imgs/{{course.university_name}}.png">
+        </ion-col>
+        <ion-col>
+          <ion-row style="text-align:left; color:#05869B">
+          {{course.name}}
+          </ion-row>
+          <ion-row>
+            <ion-col style="text-align:left; padding-left:0px; line-height:150%; color:#575757">
+              {{course.period}}
+              <br>{{course.city_state}}
+              <img class="university-rank" src="assets/imgs/{{course.rating}}stars.png">
+            </ion-col>
+            <ion-col col-3 style="text-align:right; display:flex; align-items:center; color:#575757; font-weight:bold">
+              {{course.grades.default}}
+              pontos
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </ion-content>
+</div>

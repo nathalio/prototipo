@@ -1,0 +1,220 @@
+{
+  "courses": [{
+    "id": 1,
+    "name": "Análise e Desenvolvimento de Sistemas",
+    "period": "morning",
+    "rating": 4,
+    "university_id": 1,
+    "campus_id": 1,
+    "grades": {
+      "default": "860",
+      "race": "850",
+      "handicapped": "840",
+      "poor": "855"
+    }
+  },{
+    "id": 2,
+    "name": "Administração",
+    "period": "night",
+    "rating": 4,
+    "university_id": 2,
+    "campus_id": 2,
+    "grades": {
+      "default": "720",
+      "race": "710",
+      "handicapped": "700",
+      "poor": "715"
+    }
+  },{
+    "id": 3,
+    "name": "Engenharia de Produção",
+    "period": "full",
+    "rating": 4,
+    "university_id": 3,
+    "campus_id": 3,
+    "grades": {
+      "default": "860",
+      "race": "820",
+      "handicapped": "800",
+      "poor": "830"
+    }
+  },{
+    "id": 4,
+    "name": "Administração",
+    "period": "morning",
+    "rating": 5,
+    "university_id": 4,
+    "campus_id": 4,
+    "grades": {
+      "default": "880",
+      "race": "820",
+      "handicapped": "790",
+      "poor": "860"
+    }
+  },{
+    "id": 5,
+    "name": "Administração",
+    "period": "full",
+    "rating": 5,
+    "university_id": 5,
+    "campus_id": 5,
+    "grades": {
+      "default": "720",
+      "race": "690",
+      "handicapped": "670",
+      "poor": "700"
+    }
+  },{
+    "id": 6,
+    "name": "Análise e Desenvolvimento de Sistemas",
+    "period": "full",
+    "rating": 3,
+    "university_id": 6,
+    "campus_id": 6,
+    "grades": {
+      "default": "765",
+      "race": "705",
+      "handicapped": "695",
+      "poor": "730"
+    }
+  },{
+    "id": 7,
+    "name": "Análise e Desenvolvimento de Sistemas",
+    "period": "morning",
+    "rating": 3,
+    "university_id": 7,
+    "campus_id": 7,
+    "grades": {
+      "default": "300"
+    },
+    "offer": {
+      "full_price": "714",
+      "discount_price": "500"
+    }
+  }],
+  "universities": [{
+    "id": 1,
+    "full_name": "Universidade Federal de Minas Gerais",
+    "name": "UFMG",
+    "type": "sisu",
+    "icon": "ufmg.png",
+    "campus_id": [ 1 ]
+  },{
+    "id": 2,
+    "full_name": "Universidade de São Paulo",
+    "name": "USP",
+    "type": "sisu",
+    "icon": "usp.png",
+    "campus_id": [2]
+  },{
+    "id": 3,
+    "full_name": "Universidade Estadual Paulista",
+    "name": "Unesp",
+    "type": "sisu",
+    "icon": "unesp.png",
+    "campus_id": [3]
+  },{
+    "id": 5,
+    "full_name": "Fundação Getúlio Vargas",
+    "name": "FGV",
+    "type": "prouni",
+    "icon": "fgv.png",
+    "campus_id": [5]
+  },{
+    "id": 4,
+    "full_name": "Universidade Metodista",
+    "name": "Metodista",
+    "type": [ "prouni", "fies" ],
+    "icon": "metodista.png",
+    "campus_id": [4]
+  },{
+    "id": 6,
+    "full_name": "Centro Universitário FEI",
+    "name": "FEI",
+    "type": [ "prouni", "fies" ],
+    "icon": "fei.png",
+    "campus_id": [6]
+  },{
+    "id": 7,
+    "full_name": "Universidade Paulista",
+    "name": "UNIP",
+    "type": [ "prouni", "fies" ],
+    "partner": true,
+    "icon": "ufmg.png",
+    "campus_id": [ 7 ]
+  }],
+  "campi": [{
+    "id": 1,
+    "name": "Campus Sede",
+    "city": 1,
+    "address": "Estrada 1",
+    "university_id": 1,
+    "course_id": [1]
+  },{
+    "id": 2,
+    "name": "Campus Sede",
+    "city": 2,
+    "address": "Estação Butantã",
+    "university_id": 2,
+    "course_id": [2]
+  },{
+    "id": 3,
+    "name": "Campus Sede",
+    "city": 3,
+    "address": "Centro",
+    "university_id": 3,
+    "course_id": [3]
+  },{
+    "id": 4,
+    "name": "Campus Rudge Ramos",
+    "city": 4,
+    "address": "Rua Rudge Ramos, s/n",
+    "university_id": 4,
+    "course_id": [4]
+  },{
+    "id": 5,
+    "name": "Campus Sede",
+    "city": 2,
+    "address": "Av Paulista, 900",
+    "university_id": 5,
+    "course_id": [5]
+  },{
+    "id": 6,
+    "name": "Campus Sede",
+    "city": 4,
+    "address": "Rua da FEI, 200",
+    "university_id": 6,
+    "course_id": [6]
+  },{
+    "id": 7,
+    "name": "Campus Paraíso",
+    "city": 2,
+    "address": "Estação Paraíso",
+    "university_id": 7,
+    "course_id": [7]
+  }],
+  "ratings": {
+    "5-star": [1,2,3],
+    "4-star": [4,5],
+    "3-star": [6,7],
+    "2-star": [],
+    "1-star": []
+  },
+  "cities": [{
+    "id": 1,
+    "name": "Belo Horizonte",
+    "state": "MG"
+  },{
+    "id": 2,
+    "name": "São Paulo",
+    "state": "SP"
+  },{
+    "id": 3,
+    "name": "Botucatu",
+    "state": "SP"
+  },{
+    "id": 4,
+    "name": "São Bernardo do Campo",
+    "state": "SP"
+  }]
+}

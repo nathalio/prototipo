@@ -1,0 +1,71 @@
+page-CotasAfirmativas {
+
+height:auto;
+padding: 40px 0;
+color:white;
+font-family: ProximaNova-Bold;
+font-size:20px;
+text-align:center;
+background-image: linear-gradient(to right, #18ACC4, #05869B 100%);
+
+.item {
+  border: 1px solid white;
+  margin-top: 10px;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  text-align: left;
+  border-radius: 5px;
+  font-size: 14px;
+  color: white;
+  word-wrap: break-word;
+}
+
+.item-icon-left .item-content {
+  padding-left:3em !important;
+  padding-top:7px !important;
+  padding-bottom:5px !important;
+  padding-right: 5px;
+  background-color: transparent !important;
+  color: white;
+  word-wrap: break-word;
+  font-size: 14px;
+  border: 1px solid white !important;
+  text-align: left;
+  border-radius: 5px;
+
+}
+
+.item-icon-left i {
+  left: 0;
+  padding-top:2px !important;
+  padding-bottom:5px !important;
+  right: auto;
+  color: white !important;
+  font-size: 20px !important;
+}
+
+.item-radio-default{
+  visibility: visible;//hidden;
+}
+
+.item-radio input ~ .radio-icon {
+    visibility: visible !important;
+
+
+
+
+}
+
+.item-radio > .radio-icon:before {
+
+    content: "\f3a6" !important;
+ /*deselected - Ionic class = ion-android-radio-button-off */
+}
+
+.item-radio > input[type=radio]:checked ~ .radio-icon:before {
+    content: "\f3a7" !important;/*selected Ionic class = ion-android-radio-button-on */
+}
+
+
+}

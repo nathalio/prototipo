@@ -1,0 +1,39 @@
+  <ion-header>
+    <ion-navbar>
+      <ion-title>
+        Filtros
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+    <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+</head>
+
+
+<div style="text-align: center">
+  <h1> Em qual curso você deseja se inscrever?</h1>
+</div>
+
+<div>
+  <ion-content padding="true" style="height:90vh; background-color:transparent">
+    <div class="item-content">
+      <img src="assets/imgs/i-hat.svg" class="input-icon"/>
+      <input type="text" class="item-box" name="curso1" placeholder="Digite um curso" [value]="cr1" [(ngModel)]="cr1">
+    </div>
+    <div class="item-content">
+      <img src="assets/imgs/i-hat.svg" class="input-icon"/>
+      <input type="text" class="item-box" name="curso2" placeholder="Digite outro curso (opcional)" [value]="cr2" [(ngModel)]="cr2">
+    </div>
+    <div class="item-content">
+      <img src="assets/imgs/i-hat.svg" class="input-icon"/>
+      <input type="text" class="item-box" name="curso3" placeholder="Digite outro curso (opcional)" [value]="cr3" [(ngModel)]="cr3">
+    </div>
+    <i style="text-align: center">Escolha até três cursos</i>
+    </ion-content>
+    <ion-footer>
+      <button ion-button large color="secondary" (click)="toCitySelector([cr1, cr2, cr3])" >Continuar</button>
+    </ion-footer>
+</div>

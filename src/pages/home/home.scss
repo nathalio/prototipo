@@ -1,0 +1,37 @@
+page-home {
+
+  background-image: linear-gradient(to right, #18ACC4, #05869B 100%);
+  text-align: left;
+
+  h2 {
+    font-family: ProximaNova-Bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    letter-spacing: -0.48px;
+    }
+  h1 {
+    /* Bem vindo ao Quero N: */
+    font-family: ProximaNova-Bold;
+    font-size: 36px;
+    color: #FFFFFF;
+    letter-spacing: -0.86px;
+    padding-top: 30px;
+    margin-top: 30px;
+  }
+
+  #testes {
+    min-height: 400px;
+    background-color: transparent;
+    float: left;
+    padding: 10px;
+  }
+
+  .button-md{
+
+  }
+
+  .button-md-secondary{
+
+  }
+
+}

@@ -1,0 +1,65 @@
+// http://ionicframework.com/docs/theming/
+
+.button-md{
+  text-transform: none;
+  /* button-stable: */
+  font-family: ProximaNova-Semibold;
+  font-size: 16px;
+
+
+}
+
+.button-md-secondary{
+  background-color: #10C979;
+  box-shadow: 0 1px 0 0 rgba(0,0,0,0.14);
+  border-radius: 5px;
+  width: 330px;
+  margin: 0;
+}
+
+.button-bottom{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+h1{
+  padding: 0 15px;
+}
+
+.toolbar-background{
+//  background-color: blue;
+  background-image: linear-gradient(to right, #18ACC4, #05869B 100%);
+}
+
+.toolbar-title{
+  color: white;
+  font-family: ProximaNova-Bold;
+}
+
+.button-inner{
+  //color: red;
+}
+
+.disable-hover{
+  //color: red;
+}
+
+.card-md {
+  width: 100%;
+}
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.

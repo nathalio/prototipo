@@ -1,0 +1,63 @@
+  <ion-header>
+    <ion-navbar>
+      <ion-title>
+        Filtros
+      </ion-title>
+      <ion-buttons end>
+        <button style="float: right" ion-button small outline color="light" (click)="goBack()">Limpar</button>
+      </ion-buttons>
+    </ion-navbar>
+  </ion-header>
+
+
+    <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+</head>
+
+
+
+
+<div>
+  <ion-content padding="true" style="height:90vh; background-color:transparent;">
+    <div class="subtitle">
+      <h2>Cursos</h2>
+    </div>
+    <div class="item-content">
+      <img src="assets/imgs/i-hat.svg" class="input-icon"/>
+      <input type="text" class="item-box" name="curso1" placeholder="Digite um curso" [value]="cr1" [(ngModel)]="cr1">
+    </div>
+    <div class="item-content">
+      <img src="assets/imgs/i-hat.svg" class="input-icon"/>
+      <input type="text" class="item-box" name="curso2" placeholder="Digite outro curso (opcional)" [value]="cr2" [(ngModel)]="cr2">
+    </div>
+    <div class="item-content">
+      <img src="assets/imgs/i-hat.svg" class="input-icon"/>
+      <input type="text" class="item-box" name="curso3" placeholder="Digite outro curso (opcional)" [value]="cr3" [(ngModel)]="cr3">
+    </div>
+    <div class="subtitle">
+      <h2><br>Universidades</h2>
+    </div>
+    <div class="item-content">
+      <img src="assets/imgs/i-school.svg" class="input-icon"/>
+      <input type="text" class="item-box" name="univs" placeholder="Digite uma ou mais instituições" [value]="univ" [(ngModel)]="univ">
+    </div>
+    <div class="subtitle">
+      <h2><br>Cidades</h2>
+    </div>
+    <div class="item-content">
+      <img src="assets/imgs/i-hat.svg" class="input-icon"/>
+      <input type="text" class="item-box" name="curso1" placeholder="Digite sua cidade" [value]="ct1" [(ngModel)]="ct1">
+    </div>
+    <div class="item-content">
+      <img src="assets/imgs/i-hat.svg" class="input-icon"/>
+      <input type="text" class="item-box" name="curso2" placeholder="Digite outra cidade (opcional)" [value]="ct2" [(ngModel)]="ct2">
+    </div>
+    <div class="item-content">
+      <img src="assets/imgs/i-hat.svg" class="input-icon"/>
+      <input type="text" class="item-box" name="curso3" placeholder="Digite outra cidade (opcional)" [value]="ct3" [(ngModel)]="ct3">
+    </div>
+  </ion-content>
+  <ion-footer>
+    <button ion-button large color="secondary" (click)="toCitySelector([cr1, cr2, cr3])" >Aplicar Filtros</button>
+</ion-footer>

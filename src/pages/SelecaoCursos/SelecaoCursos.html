@@ -1,0 +1,67 @@
+  <ion-header>
+    <ion-navbar>
+      <ion-title>
+        Lista de Cursos
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+
+
+    <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+</head>
+
+
+<div>
+  <h1>Veja os cursos que você pode se inscrever</h1>
+  <button ion-button large color="secondary" (click)="startApp()" >Ver as datas de inscrição</button>
+  <ion-row style="padding: 0 15px;">
+    <ion-col>
+      <button ion-button small outline color="light">Filtros</button>
+    </ion-col>
+    <ion-col>
+      <button ion-button small outline color="light">Ordenar por: Relevância</button>
+    </ion-col>
+
+  </ion-row>
+
+</div>
+
+<div>
+  <ion-content padding="true" style="height:90vh; background-color:transparent">
+    <ion-card>
+      <ion-row>
+        <ion-col col-3>
+          <img class="university-image" src="assets/imgs/ufmg.png">
+        </ion-col>
+        <ion-col>
+          <ion-row style="text-align:left; color:#05869B">
+          Análise e Desenvolvimento de Sistemas
+          </ion-row>
+          <ion-row>
+            <ion-col style="text-align:left; padding-left:0px; line-height:150%; color:#575757">
+              Noturno
+              <br>Belo Horizonte - MG
+              <img class="university-rank" src="assets/imgs/5stars.png">
+            </ion-col>
+            <ion-col col-4 style="text-align:right; display:flex; align-items:center; color:#575757; font-weight:bold">
+              820,35
+              pontos
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+      <ion-row style="height: 26px">
+        <ion-col col-1>
+          <ion-checkbox></ion-checkbox>
+        </ion-col>
+        <ion-col col-4>
+          <ion-label class="checkbox">Selecionar</ion-label>
+        </ion-col>
+      </ion-row>
+
+
+    </ion-card>
+  </ion-content>
+</div>

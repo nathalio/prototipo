@@ -1,0 +1,56 @@
+{
+  "courses": [{
+    "id": "0",
+    "name": "0",
+    "period": "0",
+    "rating": "0",
+    "university_id": "0",
+    "campus_id": "0",
+    "grades": [{
+      "default": "0",
+      "race": "0",
+      "handicapped": "0",
+      "poor": "0"
+    }],
+    "offer": [{
+      "full_price": "0",
+      "discount_price": "0"
+    }]
+  }],
+  "universities": [{
+    "id": "0",
+    "name": "0",
+    "type": "0",
+    "icon": "0",
+    "campus": [{
+      "campus_id": "0"
+    }]
+  }],
+  "campi": [{
+    "id": "0",
+    "name": "0",
+    "city": "0",
+    "address": "0",
+    "university_id": "0",
+    "courses": [{
+      "course_id": "0"
+    }]
+  }],
+  "ratings": [{
+    "5-star": [{
+      "id": "0"
+    }],
+    "4-star": [{
+      "id": "0"
+    }],
+    "3-star": [{
+      "id": "0"
+    }],
+    "2-star": [{
+      "id": "0"
+    }],
+    "1-star": [{
+      "id": "0"
+    }]
+  }]
+}

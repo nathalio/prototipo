@@ -1,0 +1,54 @@
+page-CalculoRenda {
+
+height:auto;
+padding: 40px 0;
+color:white;
+font-family: ProximaNova-Bold;
+font-size:20px;
+text-align:center;
+background-image: linear-gradient(to right, #18ACC4, #05869B 100%);
+
+.content-wrapper{
+  width:98%;
+  background-color:transparent;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+h2{
+  font-size: 20px;
+  font-family: ProximaNova-Semibold;
+  letter-spacing: -0.48px;
+  margin: auto;
+}
+
+h3{
+  font-family: ProximaNova-Bold;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: -0.55px;
+}
+
+
+.item-box{
+  border: 1px solid white;
+  border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: transparent !important;
+    margin: auto;
+
+}
+
+.label-input{
+  width: 100%;
+  margin: auto;
+}
+
+
+
+
+}

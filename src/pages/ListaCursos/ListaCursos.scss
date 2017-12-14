@@ -1,0 +1,108 @@
+page-ListaCursos {
+
+height:auto;
+padding: 40px 0;
+color:white;
+font-family: ProximaNova-Bold;
+font-size:20px;
+background-image: linear-gradient(to right, #18ACC4, #05869B 100%);
+
+
+.item-content {
+  width: 98%;
+  height: 48px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 5px 10px;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  align-content:center;
+  color: white;
+  border: 1px solid white;
+
+  border-radius: 5px;
+}
+
+.item-box{
+    border: none;
+    width: 70%;
+    text-align: left;
+    word-wrap: break-word;
+    font-size: 14px;
+    background-color: transparent !important;
+    align-content: flex-start;
+    padding-left: 5px;
+}
+
+i{
+  color: white;
+}
+
+.input-icon{
+  padding: 10px 0px;
+}
+
+input::placeholder{
+  color: #eaeaea;
+}
+
+.university-rank{
+  width: 76px;
+  height: 11px;
+  margin-top: 3px;
+
+}
+
+.university-image{
+  width: 72px;
+  height: 72px;
+  height: auto;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.button-md-secondary{
+  margin-top: 1em;
+  width: 100%;
+}
+
+.col{
+  padding: 5px;
+}
+
+.bar-button-md{
+  text-transform: none;
+}
+
+//relativo ao botão de Ordenar
+
+.item-md{
+  background-color: transparent;
+}
+
+.label-md{
+  color: white !important;
+}
+
+.select-text{
+  color: white;
+  float: left;
+  width: 50vw;
+}
+
+.select-md .select-icon .select-icon-inner{
+  color: white;
+}
+
+//relativo ao modal de Ordenar
+
+.alert-button{
+  color: red;
+}
+
+
+}
