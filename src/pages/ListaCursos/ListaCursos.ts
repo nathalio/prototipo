@@ -17,6 +17,8 @@ export class ListaCursosPage {
   public citiesSelected = [];
   public coursesSelected = [];
   public courses = [];
+  public campusList = [];
+  public courseList = [];
 
   constructor(public navCtrl: NavController,
   public navParams: NavParams
@@ -25,35 +27,53 @@ export class ListaCursosPage {
     ionViewDidLoad(){
         console.log (this.courses);
         console.log ('courses nulo dentro de ionViewDidLoad');
-        this.getCourses();
         this.citiesSelected = this.navParams.data.cities;
         this.coursesSelected = this.navParams.data.courseList;
+        Promise.all([this.getCoursesFromCity(this.citiesSelected),
+          this.getCoursesFromName(this.coursesSelected),
+          this.filterLists()])
+          .then(function(results){
+            this.processData();
+          });
     }
 
-    getCourses(): void{
+    getCoursesFromName(courseName: string): void{
       const courseReference: firebase.database.Reference = firebase.database().ref('courses');
-        courseReference.once('value', snapshot => {
-          let dataset = snapshot.val();
-          this.courses = dataset;
-          //this.processData();
+        // courseName.forEach((courseType: any)=> { //as linhas comentadas são para comportar um array de cursos
+        //   if (courseType) {
+            courseReference.orderByChild("name").equalTo(courseName).once('value', snapshot => { //courseType
+              let dataset = snapshot.val();
+              this.courseList = dataset //this.courseList.concat(dataset);
+          //   });
+          // }
         });
-
-        // this.courses = [{
-        //   "id": 1,
-        //   "name": "teste bronco",
-        //   "period": "morning",
-        //   "rating": "4",
-        //   "university_id": 1,
-        //   "campus_id": 1,
-        //   "grades": {
-        //     "default": "860",
-        //     "race": "850",
-        //     "handicapped": "840",
-        //     "poor": "855"
-        //   }
-        // }];
-
       }
+
+    getCoursesFromCity(cityName: string): void{
+      const cityReference: firebase.database.Reference = firebase.database().ref('cities');
+      const campusReference: firebase.database.Reference = firebase.database().ref('campi');
+      // cityName.forEach((cityType: any)=> {
+      //   if (cityType) {
+          cityReference.orderByChild("name").equalTo(cityName).once('value', snapshot => { //cityType
+            let dataset = snapshot.val();
+            if (dataset.id){
+              campusReference.orderByChild("city_id").equalTo(dataset.id).once('value', snapshot => {
+                let dataset2 = snapshot.val();
+                this.campusList = this.campusList.concat(dataset2);
+              });
+            }
+          });
+      //   }
+      // });
+    }
+
+    filterLists(): void{
+      let list1 = this.campusList;
+      let list2 = this.courseList;
+    }
+
+
+
 
     processData(): void {
 

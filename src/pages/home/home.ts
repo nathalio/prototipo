@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
 //import { EstadoAlunoPage } from '../EstadoAluno/EstadoAluno';
-import { EscolhaCursoPage } from '../EscolhaCurso/EscolhaCurso';
+import { EscolhaCursoECidadePage } from '../EscolhaCursoECidade/EscolhaCursoECidade';
 
 @Component({
   selector: 'page-home',
@@ -15,7 +15,7 @@ export class HomePage {
   }
 
   startApp() {
-    this.navCtrl.push(EscolhaCursoPage)
+    this.navCtrl.push(EscolhaCursoECidadePage)
     // .then(() => {
     //   this.storage.set('hasSeenTutorial', 'true');
     // })
