@@ -6,6 +6,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { HomePage } from '../pages/home/home';
 import { EstadoAlunoPage } from '../pages/EstadoAluno/EstadoAluno';
 import { EscolhaCursoPage } from '../pages/EscolhaCurso/EscolhaCurso';
+import { EscolhaCursoECidadePage } from '../pages/EscolhaCursoECidade/EscolhaCursoECidade';
 import { EscolhaCidadePage } from '../pages/EscolhaCidade/EscolhaCidade';
 
 import { ListaCursosPage } from '../pages/ListaCursos/ListaCursos';
