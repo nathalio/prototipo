@@ -1,22 +1,12 @@
-page-Filtros {
+page-EscolhaCursoECidade {
 
 height:auto;
 padding: 40px 0;
 color:white;
 font-family: ProximaNova-Bold;
 font-size:20px;
-text-align:left;
 background-image: linear-gradient(to right, #18ACC4, #05869B 100%);
 
-.subtitle{
-  /* Cursos: */
-font-family: ProximaNova-Bold;
-font-size: 24px;
-color: #FFFFFF;
-letter-spacing: -0.94px;
-text-align: left;
-margin-top: 16px;
-}
 
 .item-content {
   width: 100%;
@@ -60,7 +50,7 @@ i{
 }
 
 .button-md-secondary{
-  //margin-top: 1em;
+  margin-top: 1em;
   width: 100%;
 }
 
@@ -73,6 +63,9 @@ i{
    color:white;
    position:absolute;
    top: 48px;
+   left: 0px;
+   word-wrap: break-word;
+   width: 100%;
 
 }
 
@@ -87,10 +80,10 @@ i{
   color:#05869B;
 }
 
+
 .footer{
   padding: 15px;
 }
-
 
 
 }

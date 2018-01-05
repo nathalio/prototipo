@@ -1,22 +1,23 @@
 import { Component } from '@angular/core';
-import { Platform, Navbar } from 'ionic-angular';
+import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { EstadoAlunoPage } from '../pages/EstadoAluno/EstadoAluno';
-import { EscolhaCursoPage } from '../pages/EscolhaCurso/EscolhaCurso';
-import { EscolhaCidadePage } from '../pages/EscolhaCidade/EscolhaCidade';
-
-import { ListaCursosPage } from '../pages/ListaCursos/ListaCursos';
-import { FiltrosPage } from '../pages/Filtros/Filtros';
-import { NotasEnemPage } from '../pages/NotasEnem/NotasEnem';
-import { CalculoRendaPage } from '../pages/CalculoRenda/CalculoRenda';
-import { EscolaPublicaPage } from '../pages/EscolaPublica/EscolaPublica';
-import { CotasAfirmativasPage } from '../pages/CotasAfirmativas/CotasAfirmativas';
-
-import { SelecaoCursosPage } from '../pages/SelecaoCursos/SelecaoCursos';
-import { CalendarioPage } from '../pages/Calendario/Calendario';
+// import { EstadoAlunoPage } from '../pages/EstadoAluno/EstadoAluno';
+// import { EscolhaCursoPage } from '../pages/EscolhaCurso/EscolhaCurso';
+// import { EscolhaCursoECidadePage } from '../pages/EscolhaCursoECidade/EscolhaCursoECidade';
+// import { EscolhaCidadePage } from '../pages/EscolhaCidade/EscolhaCidade';
+//
+// import { ListaCursosPage } from '../pages/ListaCursos/ListaCursos';
+// import { FiltrosPage } from '../pages/Filtros/Filtros';
+// import { NotasEnemPage } from '../pages/NotasEnem/NotasEnem';
+// import { CalculoRendaPage } from '../pages/CalculoRenda/CalculoRenda';
+// import { EscolaPublicaPage } from '../pages/EscolaPublica/EscolaPublica';
+// import { CotasAfirmativasPage } from '../pages/CotasAfirmativas/CotasAfirmativas';
+//
+// import { SelecaoCursosPage } from '../pages/SelecaoCursos/SelecaoCursos';
+// import { CalendarioPage } from '../pages/Calendario/Calendario';
 
 import firebase from 'firebase';
 

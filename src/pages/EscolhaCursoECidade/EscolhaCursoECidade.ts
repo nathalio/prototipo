@@ -1,16 +1,15 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams, ToastController } from 'ionic-angular';
+import { NavController, ToastController } from 'ionic-angular';
 import { ListaCursosPage } from '../ListaCursos/ListaCursos';
-//import { EscolhaCidadePage } from '../EscolhaCidade/EscolhaCidade';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
-
 @Component({
-  selector: 'page-Filtros',
-  templateUrl: 'Filtros.html'
+  selector: 'page-EscolhaCursoECidade',
+  templateUrl: 'EscolhaCursoECidade.html'
 })
-export class FiltrosPage {
+
+export class EscolhaCursoECidadePage {
 
   showCityList: boolean = false;
   showCourseList: boolean = false;
@@ -23,17 +22,11 @@ export class FiltrosPage {
   public cr1 = "";
   public response: any;
 
-
   constructor(public navCtrl: NavController,
-  public navParams: NavParams,
-  public toastCtrl: ToastController,
-  private http:Http) {
-      this.initializeItems();
-  }
-
-  ionViewDidLoad(){
-    this.cr1 = this.navParams.data.course;
-    this.ct1 = this.navParams.data.city;
+  private toastCtrl: ToastController,
+  private http:Http ) {
+    this.initializeItems();
+    //this.initializeCourseItems();
   }
 
   checkEntries(city, course) {
@@ -46,7 +39,17 @@ export class FiltrosPage {
       this.displayCityError();
       error = true;
     }
-    if (!error) this.applyFilter(city, course);
+    if (!error) this.startApp(city, course);
+  }
+
+  startApp(listCity, course: any) { //traz a página de cursos com os parâmetros
+    console.log('clicou no botao');
+    this.navCtrl.push(ListaCursosPage, {
+      cities: listCity, 
+      courseList: course
+      // a página ListaCursosPage também recebe um parâmetro universityList
+      // mas aqui ele não será especificado
+    });
   }
 
   replaceCityItem(it: any) {
@@ -71,6 +74,7 @@ export class FiltrosPage {
 
       // Filter the items
       this.cityItemsFiltered = this.cityItems.filter((item) => {
+        console.log('procurou filtros de cidade')
         return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
       });
 
@@ -95,6 +99,7 @@ export class FiltrosPage {
 
       // Filter the items
       this.courseItemsFiltered = this.courseItems.filter((item) => {
+        console.log('procurou filtros de curso')
         return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
       });
 
@@ -128,7 +133,7 @@ export class FiltrosPage {
   }
 
   initializeItems() {
-
+    console.log('tentou ler arquivo')
     this.http.get("assets/data/base_data.json")
     .map(res => res.json())
     .subscribe(data => {
@@ -142,12 +147,9 @@ export class FiltrosPage {
         this.courseItems.push(course.name);
       });
     })
+
   }
 
-  applyFilter(city, course: any) {
-    this.navCtrl.push(ListaCursosPage, {
-      cities: city, //[city, "", ""], 
-      courseList: course // [course, "", ""],      universityList: university
-    });
-  }
+
+
 }

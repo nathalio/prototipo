@@ -10,6 +10,7 @@ import { HomePage } from '../pages/home/home';
 import { EstadoAlunoPage } from '../pages/EstadoAluno/EstadoAluno';
 import { EscolhaCursoPage } from '../pages/EscolhaCurso/EscolhaCurso';
 import { EscolhaCidadePage } from '../pages/EscolhaCidade/EscolhaCidade';
+import { EscolhaCursoECidadePage } from '../pages/EscolhaCursoECidade/EscolhaCursoECidade';
 
 import { ListaCursosPage } from '../pages/ListaCursos/ListaCursos';
 import { FiltrosPage } from '../pages/Filtros/Filtros';
@@ -31,6 +32,7 @@ import { CoursesData } from '../providers/courses_data';
     EstadoAlunoPage,
     EscolhaCursoPage,
     EscolhaCidadePage,
+    EscolhaCursoECidadePage,
     ListaCursosPage,
     NotasEnemPage,
     CalculoRendaPage,
@@ -44,7 +46,11 @@ import { CoursesData } from '../providers/courses_data';
     BrowserModule,
     HttpModule,
     IonicModule.forRoot(MyApp, {
-      backButtonText: 'Voltar'
+      plataforms: {
+        ios: {
+          backButtonText: 'Voltar'
+        }
+      }
     })
 
   ],
@@ -60,6 +66,7 @@ import { CoursesData } from '../providers/courses_data';
     CalculoRendaPage,
     EscolaPublicaPage,
     CotasAfirmativasPage,
+    EscolhaCursoECidadePage,
     SelecaoCursosPage,
     CalendarioPage,
     FiltrosPage

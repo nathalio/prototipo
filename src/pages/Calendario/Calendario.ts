@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, Content } from 'ionic-angular';
+import { NavController } from 'ionic-angular';
 
 import { NotasEnemPage } from '../NotasEnem/NotasEnem';
 
